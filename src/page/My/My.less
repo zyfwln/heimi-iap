@@ -1,0 +1,229 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+
+#My {
+
+    .header {
+        
+        .icon-out {
+            color: #fff;
+        }
+    }
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .my-header {
+            position: relative;
+            padding-top: .3rem;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                height: 1.3rem;
+                background-color: @default-color;
+            }
+
+            .header-wrap {
+                position: relative;
+                display: flex;
+                margin: 0 .3rem;
+                padding: .3rem 0 .15rem;
+                background-color: #fff;
+                border-radius: 8px;
+                z-index: 1;
+                
+                .wrap-img {
+                    margin-left: .48rem;
+                    width: 1.15rem;
+                    height: 1.15rem;
+                    border-radius: 50%;
+                }
+
+                .wrap-msg {
+                    flex: 1;
+                    margin-left: .25rem;
+
+                    .msg-t {
+                        display: flex;
+                        padding: .05rem 0;
+                        height: .5rem;
+                        line-height: .5rem;
+
+                        .name {
+                            flex: 1;
+                            font-size: .3rem;
+                        }
+
+                        .link {
+                            position: relative;
+                            width: 1.5rem;
+                            text-align: center;
+                            text-indent: .1rem;
+                            font-size: .26rem;
+                            color: #fff;
+                            background-color: #90b5ff;
+                            border-radius: .25rem 0 0 .25rem;
+                            overflow: hidden;
+                        }
+                    }
+
+                    .job {
+                        font-size: .26rem;
+                        color: @default-color;
+                    }
+
+                    .msg-s {
+                        
+                        .van-rate {
+                            display: flex;
+                            padding: .12rem 0;
+                            height: .3rem;
+                            line-height: .3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .my-panel {
+            margin-top: .3rem;
+            background-color: #fff;
+            
+            .panel-chart {
+                padding: .3rem 0 .2rem;
+
+                #chart {
+                    height: 2.5rem;
+                }
+            }
+            
+            .panel-items {
+                padding-bottom: .2rem;
+
+                .items {
+                    display: flex;
+
+                    .item {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        margin-left: .3rem;
+                        padding: .1rem 0;
+
+                        &:before {
+                            content: '';
+                            display: block;
+                            width: .2rem;
+                            height: .2rem;
+                        }
+
+                        &.color-4276ff {
+
+                            &:before {
+                                background-color: #4276ff;
+                            }
+                        }
+
+                        &.color-ffd042 {
+
+                            &:before {
+                                background-color: #ffd042;
+                            }
+                        }
+
+                        &.color-26bc49 {
+
+                            &:before {
+                                background-color: #26bc49;
+                            }
+                        }
+
+                        span {
+                            font-size: .24rem;
+                            
+                            &:first-child {
+                                margin-left: .15rem;
+                                color: #666;
+                            }
+
+                            &.num {
+                                margin-left: .2rem;
+                                color: #ff5c5c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .my-block {
+            display: flex;
+            margin: .2rem .3rem 0;
+
+            dl {
+                flex: 1;
+                padding: .2rem 0;
+                text-align: center;
+                background-color: #fff;
+
+                dt {
+                    height: .56rem;
+                    line-height: .56rem;
+                    
+                    &.color-ff5c5c {
+                        color: #ff5c5c;
+                    }
+                }
+
+                dd {
+                    height: .38rem;
+                    line-height: .38rem;
+                    font-size: .24rem;
+                    color: #666;
+                }
+            }
+        }
+        
+        .my-ul {
+            margin: .2rem .3rem;
+
+            .li {
+                margin-top: 1px;
+
+                span {
+                    font-size: .26rem;
+                }
+
+                .li-left {
+                    color: #333;
+                    
+                    .color-ff5c5c {
+                        margin-left: .2rem;
+                        color: #ff5c5c;
+                    }
+                }
+
+                .li-right {
+                    color: #999;
+
+                    span:last-child {
+                        margin-left: .1rem;
+                    }
+
+                    sub {
+                        font-size: .2rem;
+                    }
+
+                    .color-ff5c5c {
+                        color: #ff5c5c;
+                    }
+                }
+            }
+        }
+    }
+}

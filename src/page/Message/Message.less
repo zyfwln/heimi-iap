@@ -1,0 +1,131 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+
+#Message {
+
+    .page {
+        flex: 1;
+        padding-bottom: .6rem;
+        overflow-y: scroll;
+    
+        .item {
+            position: relative;
+            margin-top: .1rem;
+            padding: 0 .35rem;
+
+            .hd {
+                height: .7rem;
+                line-height: .7rem;
+                text-align: center;
+                font-size: .24rem;
+                color: #888;
+            }
+
+            .bd {
+                position: relative;
+                padding: .1rem .4rem .2rem;
+                background-color: #fff;
+                border-radius: 4px;
+
+                .unread {
+                    position: absolute;
+                    top: .36rem;
+                    right: .2rem;
+                    width: .14rem;
+                    height: .14rem;
+                    border-radius: 50%;
+                    background-color: #ff4a4a;
+                }
+
+                h3 {
+                    height: .7rem;
+                    line-height: .7rem;
+                    font-size: .3rem;
+                }
+
+                p {
+                    line-height: .44rem;
+                    font-size: .24rem;
+                    color: #888;
+                }
+            }
+
+            .is-select {
+                position: absolute;
+                right: .5rem;
+                top: .92rem;
+                font-size: .36rem;
+                color: @default-color;
+            }
+        }
+    }
+    
+    .operate {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: .2rem .35rem;
+        background-color: #fff;
+
+        &:after {
+            .top-line(@color: #ccc);
+        }
+
+        .li {
+            flex: 1;
+            height: .5rem;
+            line-height: .5rem;
+            text-align: center;
+            font-size: .26rem;
+            color: @default-color;
+            border-radius: 2px;
+
+            &:last-child {
+                color: #999;
+            }
+
+            &:not(:first-child) {
+                margin-left: .6rem;
+            }
+        }
+    }
+
+    .van-popup {
+        width: 80%;
+        border-radius: 4px;
+    }
+        
+    .message-box {
+        padding: .2rem;
+
+        h3 {
+            padding: .25rem 0;
+            line-height: .5rem;
+            text-align: center;
+            font-size: .3rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        p {
+            padding-bottom: .2rem;
+            line-height: .46rem;
+            font-size: .28rem;
+            letter-spacing: 1px;
+            color: #666;
+        }
+    }
+
+    .button {
+        position: relative;
+        height: .9rem;
+        line-height: .9rem;
+        text-align: center;
+        font-size: .36rem;
+        color: @default-color;
+
+        &:after {
+            .top-line();
+        }
+    }
+}

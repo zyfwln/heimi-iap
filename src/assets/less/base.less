@@ -1,0 +1,454 @@
+@import 'mixin.less';
+
+.color-default {
+  color: @default-color;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.border-bottom {
+  position: relative;
+
+  &:after {
+    .bottom-line();
+    left: 0 !important;
+  }
+}
+
+.border-top {
+  position: relative;
+
+  &:after {
+    .top-line();
+    left: 0 !important;
+  }
+}
+
+.iconfont {
+
+  &.icon-sex-man, &.icon-sex-man-2 {
+    margin-left: 5px;
+    font-size: 14px;
+
+    &:before {
+      color: #76b9eb;
+    }
+  }
+
+  &.icon-sex-women, &.icon-sex-women-2 {
+    margin-left: 5px;
+    font-size: 14px;
+
+    &:before {
+      color: #fd779b;
+    }
+  }
+
+  &.icon-right {
+    transition: all .3s;
+    font-size: 14px;
+    color: #999;
+  }
+}
+
+.header {
+
+  .title {
+    font-size: .34rem;
+  }
+
+  .right {
+    color: #fff;
+  }
+}
+
+#Home {
+
+  .page {
+
+    .van-cell {
+      padding: 0;
+    }
+  }
+}
+
+// van UI重设
+.van-collapse-item--expanded {
+
+  .icon-right {
+    transform: rotate(90deg);
+  }
+}
+
+.van-dialog__confirm {
+  color: @default-color !important;
+}
+
+.van-collapse-item__wrapper {
+
+  .van-collapse-item__content {
+    padding: 0;
+  }
+}
+
+.van-loading {
+  margin: .15rem auto;
+}
+
+.van-field__body {
+  align-items: center;
+
+  input {
+    height: 24px;
+  }
+}
+
+//----------------PROJECT---------------------
+.bg-none {
+  background: initial !important;
+}
+
+.bg-white {
+  background: #fff !important;
+}
+
+.bg-page {
+  background: #F5F7F7 !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-h-flex {
+  display: flex;
+  align-items: center;
+}
+
+.center-v-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.ellipsis--l2 {
+  max-height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis--l3 {
+  max-height: 60px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.font-8 {
+  font-size: 8px;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.font-24 {
+  font-size: 22px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-gray-ccc {
+  color: #ccc !important;
+}
+
+.font-gray-666 {
+  color: #666 !important;
+}
+
+.font-gray-999 {
+  color: #999;
+}
+
+.font-gray-21 {
+  color: #212121 !important;
+}
+
+.font-red {
+  color: #FF1717 !important;
+}
+
+.font-red-d7593f {
+  color: #D7593F !important;
+}
+
+.font-primary {
+  color: #7CB305 !important;
+}
+
+.margin-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.p-10 {
+  padding: 20px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pr-5 {
+  padding-left: 5px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-45 {
+  padding-bottom: 45px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pb-110 {
+  padding-bottom: 55px;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.position-relative {
+  position: relative;
+}
+
+// 底部固定按钮
+.suspended-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  //padding: 20rpx 20rpx;
+  color: #666666;
+  font-size: 28rpx;
+  z-index: 8;
+  box-shadow:0px -5px 20px rgba(0,0,0,0.12);
+}
+
+.ic-sex-nan {
+  display: inline-block;
+  content: " ";
+  width: 17px;
+  height: 17px;
+  background: url("../image/ic_sex_nan.png");
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.ic-sex-nv {
+  display: inline-block;
+  content: " ";
+  width: 17px;
+  height: 17px;
+  background: url("../image/ic_sex_nv.png");
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.ic-shou{
+  display: inline-block;
+  content: " ";
+  width: 17px;
+  height: 17px;
+  background: url("../image/ic_xiaoshou.png");
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 5px;
+}

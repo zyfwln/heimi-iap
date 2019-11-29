@@ -1,0 +1,31 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/btn.less';
+
+#SummaryRemind {
+    background: #fff;
+    
+    .man {
+
+        .page {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+
+            img {
+                margin-top: 2rem;
+                width: 100%;
+            }
+
+            .button {
+                margin: 1.8rem auto 0;
+                width: 2.48rem;
+                height: .74rem;
+                line-height: .74rem;
+                .button(@background-color: @default-color, @radius: .37rem);
+                overflow: hidden;
+            }
+        }
+    }
+}

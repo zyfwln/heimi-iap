@@ -1,0 +1,62 @@
+#MySalary {
+
+    .total {
+        padding-bottom: .4rem;
+        height: 1.6rem;
+        line-height: 1.6rem;
+        text-align: center;
+        font-size: .5rem;
+        color: #fff;
+        background-color: #4d95ff;
+    }
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        li {
+            margin-top: .2rem;
+            padding: .2rem .3rem;
+            background-color: #fff;
+            
+            .li {
+                display: flex;
+                align-items: center;
+                height: .6rem;
+                line-height: .46rem;
+
+                .label {
+                    margin-right: .2rem;
+
+                    div {
+                        width: 1.7rem;
+                        text-align: center;
+                        font-size: .24rem;
+                        color: #fff;
+                        background-color: #487bff;
+                        border-radius: 2px;
+                    }
+                }
+
+                .name {
+                    flex: 1;
+                    color: #777;
+                }
+
+                .num {
+                    margin-left: .2rem;
+                }
+
+                .time {
+                    flex: 1;
+                    font-size: .24rem;
+                    color: #999;
+                }
+
+                .price {
+                    color: #ff5751;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/cell.less';
+
+#Guest {
+    
+    .header {
+
+        .icon-search {
+            color: #fff;
+        }
+    }
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .guest-header {
+            padding: .36rem .3rem;
+            line-height: .3rem;
+            background-color: #fff;
+            
+            .text {
+                font-size: .3rem;
+            }
+
+            .fr {
+                font-size: .26rem;
+                color: #999;
+
+                i {
+                    color: #ff4343;
+                }
+            }
+        }
+        
+        .guset-chart {
+            background-color: #fff;
+            
+            #chart {
+                padding: .2rem 0;
+                height: 3.1rem;
+            }
+            
+            .chart-list {
+                position: relative;
+                margin-top: .3rem;
+                
+                &:after {
+                    .top-line();
+                }
+
+                .cell {
+                    .cell();
+
+                    .li {
+                        flex: 1;
+                        color: #777;
+
+                        &.left {
+                            display: flex;
+                            align-items: center;
+
+                            .before {
+                                display: inline-block;
+                                width: .26rem;
+                                height: .26rem;
+                            }
+
+                            span {
+                                margin-left: .3rem;
+                            }
+                        }
+
+                        &.center {
+                            text-align: center;
+                        }
+
+                        &.right {
+                            text-align: right;
+
+                            .icon-right {
+                                margin-left: .15rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .van-cell {
+            margin: .3rem 0;
+
+            span {
+                color: #ff4343;
+            }
+        }
+    }
+
+    #CustomerSearch {
+        z-index: 999;
+    }
+}

@@ -1,0 +1,34 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/btn.less';
+
+#GuestFollowRecord {
+
+    .header {
+        background-color: #919191;
+    }
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .van-cell-group {
+            margin-top: .3rem;
+            
+            .placeholder {
+                color: #999;
+            }
+        }
+
+        .z-textarea, .z-uploader {
+            margin-top: .3rem;
+        }
+    }
+    
+    .button {
+        margin: .3rem;
+        height: .8rem;
+        line-height: .8rem;
+        .button(@background-color: #919191;);
+    }
+}

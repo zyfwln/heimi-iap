@@ -1,0 +1,29 @@
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/cell.less';
+
+#CustomerDemand {
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .cell {
+            .cell();
+
+            &:before {
+                .arrow-head();
+                right: .3rem;
+            }
+
+            .left {
+                width: 1.7rem;
+                font-size: .3rem;
+                color: #999;
+            }
+
+            .center {
+                margin-left: .6rem;
+            }
+        }
+    }
+}

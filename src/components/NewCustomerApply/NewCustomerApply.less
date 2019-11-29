@@ -1,0 +1,56 @@
+@import '../../assets/less/cell.less';
+
+#NewCustomerApply {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 999;
+    background: #f5f5f5;
+    transition: all .3s;
+
+    .header {
+        display: flex;
+        padding: .26rem .28rem;
+        line-height: .36rem;
+        background-color: #919191;
+
+        .iconfont {
+            color: #fff;
+        }
+
+        .title {
+            flex: 1;
+            font-size: .34rem;
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    .ul {
+        flex: 1;
+        overflow-y: scroll;
+
+        .van-cell {
+            
+            .left {
+                
+                .iconfont {
+                    margin-left: 0;
+                    margin-right: 5px;
+                }
+            }
+
+            .van-cell__value span {
+                color: #777;
+            }
+        }
+    }
+}
+
+.pop-right-enter, .pop-right-leave-to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+}

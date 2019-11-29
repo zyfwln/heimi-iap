@@ -1,0 +1,150 @@
+#DebtDetail {
+
+    .header {
+        background-color: #b76b08;
+    }
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+    
+        .detail {
+            margin-bottom: .2rem;
+
+            .item {
+                margin-bottom: .2rem;
+                padding: 0 .25rem;
+                background-color: #fff;
+            }
+
+            ul {
+                padding-bottom: .2rem;
+            }
+
+            .head {
+                height: .86rem;
+                line-height: .86rem;
+                color: #999;
+            }
+
+            dl {
+                display: flex;
+                align-items: center;
+                padding: 0 .1rem;
+
+                dd {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    
+                    .type {
+                        padding: 0 .06rem;
+                        height: .34rem;
+                        line-height: .34rem;
+                        font-size: .24rem;
+                        color: #fff;
+                        background-color: #2ea7f4;
+
+                        &.no {
+                            background-color: #f26969;
+                        }
+                    }
+
+                    .name {
+                        margin-left: .15rem;
+                    }
+                }
+            }
+
+            .p {
+                padding: .14rem 0;
+
+                dt {
+                    width: 1.4rem;
+                    
+                    .cate {
+                        width: .9rem;
+                        height: .44rem;
+                        line-height: .44rem;
+                        text-align: center;
+                        font-size: .24rem;
+                        color: #fff;
+                        background-color: #2ea7f4;
+
+                        &.no {
+                            background-color: #f26969;
+                        }
+                    }
+                }
+
+                .bd {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+
+                    .left {
+                        flex: 3.5;
+                        font-size: .26rem;
+                    }
+
+                    .center {
+                        flex: 1;
+                        text-align: center;
+                        color: #666;
+                    }
+                    
+                    .right {
+                        flex: 2;
+                        text-align: right;
+                        color: #666;
+                    }
+                }
+
+                .rate {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .name {
+                        flex: 1;
+                        font-size: .26rem;
+                    }
+
+                    .z-progress {
+                        width: 1.2rem;
+                        border-radius: 3px;
+                    }
+
+                    .text {
+                        margin-left: .25rem;
+                        color: #b76b08;
+                    }
+                }
+            }
+
+            .pay {
+                display: flex;
+                justify-content: flex-end;
+                padding: .2rem 0;
+
+                .left, .right {
+
+                    div {
+                        height: .54rem;
+                        line-height: .54rem;
+                        text-align: right;
+                    }
+                }
+
+                .left, .right {
+                    color: #666;
+                }
+
+                .red {
+                    color: #df5b7a;
+                }
+            }
+        }
+    }
+}

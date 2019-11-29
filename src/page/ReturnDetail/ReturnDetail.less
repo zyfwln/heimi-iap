@@ -1,0 +1,43 @@
+#ReturnDetail {
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .van-cell {
+            margin-top: .3rem;
+        }
+
+        .box {
+            margin-top: .3rem;
+            padding: 0 15px;
+            background-color: #fff;
+
+            .hd {
+                height: .8rem;
+                line-height: .8rem;
+            }
+
+            .bd {
+                padding-bottom: .3rem;
+                overflow-y: scroll;
+
+                p {
+                    line-height: .46rem;
+                    font-size: .26rem;
+                    color: #666 * 1.1;
+                }
+
+                img {
+                    float: left;
+                    max-width: 22.5%;
+                    margin-bottom: .2rem;
+
+                    &:not(:nth-child(4n)) {
+                        margin-right: 3%;
+                    }
+                }
+            }
+        }
+    }
+}

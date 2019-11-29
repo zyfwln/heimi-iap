@@ -1,0 +1,84 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+
+#CustomersForLevel {
+    background-color: #fff;
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        li {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: .34rem .54rem .34rem .4rem;
+
+            &:before {
+                .bottom-line();
+            }
+
+            .left {
+                display: flex;
+
+                img {
+                    width: .9rem;
+                    height: .9rem;
+                    border-radius: 50%;
+                }
+
+                dl {
+                    margin-left: .2rem;
+
+                    dt {
+                        padding: .06rem 0;
+                        height: .3rem;
+                        line-height: .3rem;
+
+                        i {
+                            margin-left: .2rem;
+                            padding: 0 .1rem;
+                            font-size: .24rem;
+                            color: #fff;
+                            background-color: @default-color;
+                            border-radius: 2px;
+                        }
+                    }
+
+                    dd {
+                        margin-top: .1rem;
+                        height: .38rem;
+                        line-height: .38rem;
+                    }
+                }
+            }
+
+            .right {
+                position: relative;
+                margin-left: .2rem;
+                max-width: 40%;
+
+                &:after {
+                    .arrow-head(@right: -10px);
+                }
+
+                dl {
+                    color: #ff4e4e;
+
+                    dt {
+                        height: .42rem;
+                        line-height: .42rem;
+                        font-size: .24rem;
+                    }
+                    
+                    dd {
+                        margin-top: .1rem;
+                        height: .38rem;
+                        line-height: .38rem;
+                        font-size: .24rem;
+                    }
+                }
+            }
+        }
+    }
+}

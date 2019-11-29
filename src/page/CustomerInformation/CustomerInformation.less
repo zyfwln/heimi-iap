@@ -1,0 +1,192 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/btn.less';
+
+#CustomerInformation {
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .remark {
+            margin-top: .24rem;
+            padding: 0 15px 15px;
+            background-color: #fff;
+
+            h3 {
+                height: .7rem;
+                line-height: .7rem;
+            }
+
+            p {
+                position: relative;
+                padding-bottom: .2rem;
+                line-height: .48rem;
+                text-indent: 20px;
+                font-size: .26rem;
+                color: #999;
+
+                &:after {
+                    .bottom-line();
+                }
+            }
+        }
+
+        .box {
+            position: relative;
+            margin-bottom: .1rem;
+            background-color: #fff;
+
+            &:before {
+                .top-line();
+            }
+
+            &:after {
+                .bottom-line();
+            }
+
+            .b-hd {
+                padding: 0 .28rem;
+                height: .9rem;
+                line-height: .9rem;
+                color: #000;
+            }
+
+            .b-bd {
+                padding: .2rem .3rem .2rem .4rem;
+
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .column {
+                        display: flex;
+                        align-items: center;
+                        padding: .15rem 0;
+                        height: .46rem;
+                        line-height: .46rem;
+
+                        .title {
+                            color: #888;
+                        }
+
+                        .value {
+                            color: #333;
+
+                            .select {
+                                display: flex;
+                                width: 1.6rem;
+                                border: 1px solid @line-color;
+
+                                input {
+                                    width: 1.1rem;
+                                    text-align: center;
+                                }
+
+                                .down {
+                                    position: relative;
+                                    flex: 1;
+                                    background-color: @line-color;
+                                
+                                    &:before {
+                                        .arrow(@width: 6px);
+                                        position: absolute;
+                                        left: 50%;
+                                        top: 50%;
+                                        transform: translate(-50%, -20%) rotate(180deg);
+                                    }
+                                }
+                            }
+
+                            .input {
+                                width: 1.6rem;
+                                border: 1px solid @line-color;
+
+                                input {
+                                    width: 100%;
+                                    text-indent: 5px;
+                                }
+
+                                &.w100 {
+                                    width: 100%;
+                                }
+                            }
+
+                            .color-box {
+                                display: flex;
+
+                                .color {
+                                    margin-right: .4rem;
+                                    width: .6rem;
+                                    height: .4rem;
+                                    
+                                    &.on {
+                                        position: relative;
+                                        text-align: center;
+                                        
+                                        &:after {
+                                            content: '\e631';
+                                            font-family: 'iconfont';
+                                            color: #fff;
+                                        }
+                                    }
+
+                                    &:nth-child(1) {
+                                        background-color: #f95454;
+                                    }
+
+                                    &:nth-child(2) {
+                                        background-color: #eee10f;
+                                    }
+                                    
+                                    &:nth-child(3) {
+                                        background-color: #00b7ee;
+                                    }
+                                    
+                                    &:nth-child(4) {
+                                        background-color: #4dc886;
+                                    }
+                                }
+                            }
+
+                            .red {
+                                color: #ff8f8f;
+                            }
+
+                            .add {
+                                color: #7db2f3;
+                            }
+
+                            .date {
+                                margin-right: .2rem;
+                            }
+                        }
+                    }
+
+                    &.info {
+                        flex-wrap: wrap;
+                        
+                        div {
+                            font-size: .24rem;
+                        }
+
+                        .column {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .button {
+        height: .8rem;
+        line-height: .8rem;
+        .button(@radius: 0);
+    }
+
+    .van-popup {
+        width: 70%;
+        border-radius: 4px;
+    }
+}

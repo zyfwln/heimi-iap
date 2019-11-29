@@ -1,0 +1,21 @@
+@import 'mixin.less';
+
+.cell(@display: flex, @height: .98rem) {
+    position: relative;
+    display: @display;
+    padding: 0 .4rem;
+    height: @height;
+    line-height: @height;
+    background-color: #fff;
+
+    &.is-link {
+
+        &:active {
+            background-color: #efefef;
+        }
+    }
+
+    &:after {
+        .bottom-line();
+    }
+}

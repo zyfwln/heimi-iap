@@ -1,0 +1,44 @@
+@import '../../../assets/less/mixin.less';
+
+.z-collapse-item {
+    
+    .z-c-title {
+        position: relative;
+        display: flex;
+        padding: 10px 15px;
+        height: 24px;
+        line-height: 24px;
+        background-color: #fff;
+
+        &:after {
+            .bottom-line();
+            left: 15px;
+            right: 15px;
+            width: auto;
+        }
+
+        .title {
+            flex: 1;
+        }
+
+        .value {
+            margin-right: 5px;
+        }
+
+        .icon-right {
+            transform: rotate(90deg);
+
+            &.up {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    .z-c-panel {
+
+        .panel-content {
+            padding: 15px;
+            background-color: #fff;
+        }
+    }
+}

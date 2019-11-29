@@ -1,0 +1,86 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/cell.less';
+
+.project-list {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 999;
+    background: #f5f5f5;
+    transition: all .3s;
+
+    .header {
+        display: flex;
+        padding: .26rem .28rem;
+        line-height: .36rem;
+        background-color: @default-color;
+
+        .iconfont {
+            color: #fff;
+        }
+
+        .title {
+            flex: 1;
+            font-size: .34rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .right {
+            width: .34rem;
+        }
+    }
+
+    .tab {
+        position: relative;
+        display: flex;
+        padding: .15rem 0;
+        background-color: #f7f9f8;
+        
+        &:after {
+            .bottom-line(@color: #ccc);
+        }
+
+        .tab-li {
+            flex: 1;
+            height: .5rem;
+            line-height: .5rem;
+            text-align: center;
+            color: #666;
+
+            &.on {
+                color: @default-color;
+            }
+        }
+    }
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .van-cell {
+            padding-left: .6rem;
+
+            .value {
+                color: #ff7a7a;
+            }
+        }
+
+        .cell {
+            .cell();
+
+            .value {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.pop-right-enter, .pop-right-leave-to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+}

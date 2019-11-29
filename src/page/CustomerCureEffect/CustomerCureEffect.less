@@ -1,0 +1,50 @@
+@import '../../assets/less/btn.less';
+
+#CustomerCureEffect {
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .van-cell-group {
+            background-color: #f5f5f5;
+
+            &:not(:first-child) {
+                padding-top: .14rem;
+            }
+
+            .van-cell {
+
+                .title {
+                    color: #777;
+                }
+
+                .value {
+
+                    .placeholder {
+                        color: #ccc;
+                    }
+                }
+
+                .btns {
+                    display: flex;
+
+                    .btn {
+                        flex: 1;
+                        height: .52rem;
+                        line-height: .52rem;
+                        .button(@font-size: .24rem, @radius: 0);
+
+                        &:last-child {
+                            margin-left: .2rem;
+                        }
+
+                        &.off {
+                            background-color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

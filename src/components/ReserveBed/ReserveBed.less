@@ -1,0 +1,194 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/btn.less';
+
+#ReserveBed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #f5f5f5;
+    transition: all .3s;
+
+    .header {
+
+        .left {
+            color: #fff;
+        }
+    }
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 .3rem;
+            background-color: #fff;
+
+            &.margin-top {
+                margin-top: .2rem;
+            }
+
+            .left {
+                height: .86rem;
+                line-height: .86rem;
+                color: #888;
+            }
+            
+            .status {
+                display: flex;
+
+                li {
+                    margin-left: .2rem;
+                    padding-right: .3rem;
+                    height: .86rem;
+                    line-height: .9rem;
+                    font-size: .22rem;
+                    color: #888;
+
+                    &:nth-child(1) {
+                        background: url(../../assets/image/icon_bed_free.png) right center no-repeat;
+                        background-size: auto .28rem;
+                    }
+
+                    &:nth-child(2) {
+                        background: url(../../assets/image/icon_bed_max.png) right center no-repeat;
+                        background-size: auto .28rem;
+                    }
+
+                    &:nth-child(3) {
+                        background: url(../../assets/image/icon_bed_checked.png) right center no-repeat;
+                        background-size: auto .28rem;
+                    }
+                }
+            }
+        }
+
+        .van-swipe {
+            padding-bottom: .6rem;
+            background-color: #fff;
+        }
+
+        .room-page, .bed-page {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 .3rem;
+        }
+
+        .room-page {
+            justify-content: space-between;
+
+            li {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 4.5%;
+                padding: .15rem 0;
+                width: 48%;
+                background-color: #f2f2f2;
+
+                &.on {
+                    border: 1px solid @default-color;
+                }
+
+                .room {
+                    font-size: .3rem;
+                    height: .44rem;
+                    line-height: .44rem;
+                }
+
+                dl {
+                    max-width: 100%;
+
+                    dt {
+                        height: .44rem;
+                        line-height: .44rem;
+                        font-size: .24rem;
+                        color: #777;
+                    }
+
+                    dd {
+                        height: .4rem;
+                        line-height: .4rem;
+                        font-size: .2rem;
+                        color: #ababab;
+
+                        span {
+                            color: @default-color;
+
+                            &.full {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bed-page {
+            margin-top: .38rem;
+            margin-bottom: .15rem;
+            padding: .4rem 0;
+            background-color: #f2f2f2;
+
+            li {
+                width: 33.33%;
+                text-align: center;
+
+                &:nth-child(6n + 4),
+                &:nth-child(6n + 5),
+                &:nth-child(6n + 6) {
+                    padding-top: .5rem;
+                }
+
+                .btn {
+                    margin: 0 auto;
+                    width: .52rem;
+                    height: .64rem;
+                    background: url(../../assets/image/icon_bed_free.png) right center no-repeat;
+                    background-size: cover;
+
+                    &.max {
+                        background: url(../../assets/image/icon_bed_max.png) right center no-repeat;
+                        background-size: cover;
+                    }
+
+                    &.checked {
+                        background: url(../../assets/image/icon_bed_checked.png) right center no-repeat;
+                        background-size: cover;
+                    }
+                }
+
+                p {
+                    padding-top: .1rem;
+                    height: .4rem;
+                    line-height: .4rem;
+                    font-size: .24rem;
+                    text-align: center;
+                    color: #777;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .custom-indicator {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translateX(-50%);
+        }
+    }
+
+    .button {
+        height: .8rem;
+        line-height: .8rem;
+        .button(@font-size: .32rem, @radius: 0);
+    }
+}
+
+.pop-right-enter, .pop-right-leave-to {
+    transform: translate3d(100%, 0, 0);
+}

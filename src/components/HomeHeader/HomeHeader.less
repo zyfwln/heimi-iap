@@ -1,0 +1,57 @@
+@import '../../assets/less/mixin.less';
+
+.header {
+    position: relative;
+    display: flex;
+    padding: .26rem .2rem;
+    line-height: .36rem;
+    z-index: 2;
+
+    .history {
+        
+        span {
+            font-size: .28rem;
+            color: #fff;
+        }
+    }
+
+    .ul {
+        flex: 1;
+        display: flex;
+        margin: 0 .2rem;
+
+        .li {
+            flex: 1;
+            text-align: center;
+            font-size: .26rem;
+            color: #fff;
+            transition: all .2s;
+
+            &.on {
+                font-size: .3rem;
+            }
+        }
+    }
+
+    .right {
+    
+        .icon-news {
+            color: #fff;
+            
+            &.news {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: .01rem;
+                    top: 0;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #f10;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

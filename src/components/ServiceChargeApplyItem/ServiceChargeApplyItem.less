@@ -1,0 +1,56 @@
+@import '../../assets/less/cell.less';
+
+li {
+    .cell();
+
+    .left {
+        flex: 1;
+        display: flex;
+
+        .iconfont {
+            margin-right: .15rem;
+            font-size: 16px;
+            color: #666;
+
+            &.icon-checkbox-yes-2 {
+                color: #d18522;
+            }
+        }
+
+        .name {
+            flex: 1;
+            color: #666;
+            overflow: hidden;
+        }
+    }
+
+    .center {
+        flex: 1;
+        text-align: center;
+        color: #666;
+    }
+
+    .right {
+        position: relative;
+        line-height: .44rem;
+
+        input {
+            margin-top: .27rem;
+            padding-right: .4rem;
+            width: .7rem;
+            height: .44rem;
+            text-align: right;
+            color: #666;
+            background-color: #eee;
+        }
+
+        i {
+            position: absolute;
+            right: .1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            color: #666;
+        }
+    }
+}

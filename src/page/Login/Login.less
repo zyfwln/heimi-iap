@@ -1,0 +1,85 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/btn.less';
+
+#Login {
+    flex: 1;
+    min-height: 100%;
+    background: #fff;
+
+    .form {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+
+        .logo {
+            padding-bottom: .3rem;
+            
+            img {
+                margin: 0 auto;
+                width: 2.2rem;
+            }
+
+            h3 {
+                text-align: center;
+                height: .54rem;
+                line-height: .54rem;
+                font-size: .2rem;
+                color: #999;
+            }
+        }
+
+        .f-cell {
+            display: flex;
+            justify-content: center;
+            margin: 0 10%;
+            height: .64rem;
+            line-height: .64rem;
+            border: 1px solid @line-color;
+            border-radius: .64rem;
+
+            &:not(:last-child) {
+                margin-top: .3rem;
+            }
+
+            &.id {
+                background: url(../../assets/image/icon_id.png) left .3rem center no-repeat;
+                background-size: auto .36rem;
+            }
+
+            &.user {
+                background: url(../../assets/image/icon_user.png) left .3rem center no-repeat;
+                background-size: auto .36rem;
+            }
+
+            &.password {
+                background: url(../../assets/image/icon_password.png) left .35rem center no-repeat;
+                background-size: auto .38rem;
+            }
+
+            .input {
+                flex: 1;
+                margin: 0 20%;
+
+                input {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .btn {
+            display: block;
+            margin: .7rem auto 0;
+            width: 2.55rem;
+            height: .7rem;
+            line-height: .7rem;
+            font-size: .34rem;
+            color: #fff;
+            background-color: #8e2adf;
+            border-radius: 4px;
+            // .button(@font-size: .34rem, @background-color: #276dde);
+        }
+    }
+}

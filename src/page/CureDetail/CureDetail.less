@@ -1,0 +1,80 @@
+@import '../../assets/less/mixin.less';
+
+#CureDetail {
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+        
+        .item {
+            margin-top: .14rem;
+            background-color: #fff;
+
+            .van-cell {
+
+                .date {
+                    display: flex;
+                    justify-content: flex-end;
+                    color: #999;
+                
+                    .iconfont {
+                        margin-right: .1rem;
+                        font-size: .32rem;
+                    }
+                }
+            }
+
+            .box {
+                padding: 0 15px;
+                
+                h3 {
+                    height: .6rem;
+                    line-height: .6rem;
+                }
+
+                p {
+                    position: relative;
+                    padding-bottom: .2rem;
+                    line-height: .52rem;
+                    text-indent: 20px;
+                    color: #888;
+                    
+                    &:after {
+                        .bottom-line();
+                    }
+                }
+
+                ul {
+                    display: flex;
+
+                    dl {
+                        margin-top: .1rem;
+
+                        &:not(:first-child) {
+                            margin-left: .7rem;
+                        }
+
+                        dt {
+                            width: 1.2rem;
+                            height: 1.2rem;
+                            border-radius: 50%;
+                            overflow: hidden;
+
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+
+                        dd {
+                            height: .54rem;
+                            line-height: .54rem;
+                            text-align: center;
+                            font-size: .24rem;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

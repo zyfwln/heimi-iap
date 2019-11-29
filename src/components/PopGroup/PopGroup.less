@@ -1,0 +1,35 @@
+.z-pop-group {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 9;
+
+    .pop-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .7);
+    }
+
+    .pop-content {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        transform: translate3d(0, -50%, 0);
+        background-color: #fff;
+        overflow-y: scroll;
+        z-index: 1;
+
+        &.pop-bottom {
+            top: auto;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}

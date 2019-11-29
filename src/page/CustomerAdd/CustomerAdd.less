@@ -1,0 +1,150 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/btn.less';
+@import '../../assets/less/cell.less';
+
+#CustomerAdd {
+
+    .form {
+        flex: 1;
+        background-color: #fff;
+
+        .f-title {
+            position: relative;
+            height: 1.1rem;
+            line-height: 1.1rem;
+            text-align: center;
+            font-size: .36rem;
+
+            &:after {
+                .bottom-line();
+            }
+        }
+
+        .cell {
+            position: relative;
+            .cell(@height: .5rem);
+            padding: .3rem .4rem;
+
+            &:before {
+                .bottom-line();
+            }
+
+            .left {
+                flex: 2;
+            }
+
+            .right {
+                flex: 3;
+
+                input {
+                    width: 100%;
+                    text-align: right;
+                }
+
+                &.radio {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .z-radio-group {
+                        width: 1.9rem;
+                    }
+                }
+            }
+            
+            &.is-link {
+
+                span.fr {
+                    position: relative;
+                    padding-right: 12px;
+                    
+                    &:after {
+                        .arrow-head();
+                    }
+
+                    &.placeholder {
+                        color: #777;
+                    }
+                }
+            }
+        }
+    }
+
+    .save {
+        background-color: #fff;
+        
+        .button {
+            margin: .3rem .4rem;
+            height: .8rem;
+            line-height: .8rem;
+            .button();
+        }
+    }
+
+    .from-search {
+        display: flex;
+        flex-direction: column;
+        .layer();
+        background: #f5f5f5;
+        transition: all .4s;
+
+        .search-title {
+            padding-right: .8rem;
+            height: .9rem;
+            line-height: .9rem;
+            text-align: center;
+            font-size: .32rem;
+            color: #fff;
+            background-color: @default-color;
+            border-bottom: 1px solid @line-color;
+
+            .fl {
+                margin-left: .4rem;
+            }
+        }
+        
+        .search-list {
+            flex: 1;
+            overflow-y: scroll;
+
+            .van-cell {
+                padding: .3rem .4rem;
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    
+                    .iconfont {
+                        margin-right: 5px;
+                        font-size: 16px;
+                        color: #999;
+    
+                        &.icon-checkbox-yes-r {
+                            color: @default-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .van-actionsheet {
+        color: #666;
+
+        .li {
+            position: relative;
+            margin: 0 .4rem;
+            height: .8rem;
+            line-height: .8rem;
+            color: #333;
+            
+            &:after {
+                .bottom-line();
+            }
+        }
+    }
+}
+
+.trans-enter, .trans-leave-to {
+    transform: translateX(100%);
+}

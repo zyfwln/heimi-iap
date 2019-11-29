@@ -1,0 +1,213 @@
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/btn.less';
+
+#PotentialCustomer {
+    
+    .page {
+        flex: 1;
+        background-color: #fff;
+        overflow-y: scroll;
+
+        .c-header {
+            display: flex;
+            padding: .4rem .4rem .18rem;
+            background-color: #fff;
+
+            .header-img {
+                width: .9rem;
+                height: .9rem;
+                border-radius: 50%;
+            }
+
+            .header-wrap {
+                flex: 1;
+                margin-left: .3rem;
+                color: #444;
+
+                .wrap-hd {
+                    display: flex;
+
+                    .hd-l {
+                        flex: 1;
+
+                        .l-t {
+                            display: flex;
+                            width: 2.5rem;
+                            height: .5rem;
+                            line-height: .5rem;
+
+                            .name {
+                                flex: 1;
+                                font-size: .3rem;
+                            }
+
+                            .red {
+                                width: 1rem;
+                                margin-left: .3rem;
+                                color: #ff4e4e;
+                            }
+                        }
+
+                        .l-f {
+                            height: .44rem;
+                            line-height: .44rem;
+                        }
+                    }
+
+                    .hd-r {
+
+                        .btn {
+                            margin-top: .15rem;
+                            width: 1.54rem;
+                            height: .52rem;
+                            line-height: .52rem;
+                            .button(@radius: 0, @font-size: .24rem);
+                        }
+                    }
+                }
+
+                .wrap-bd {
+                    display: flex;
+                    height: .62rem;
+                    line-height: .62rem;
+
+                    .bd-li {
+                        flex: 1;
+                        font-size: .24rem;
+                    }
+                }
+            }
+        }
+
+        .c-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: .14rem;
+            background-color: #f5f5f5;
+
+            .s-item {
+                position: relative;
+                width: 50%;
+                height: .88rem;
+                line-height: .88rem;
+                background-color: #fff;
+
+                &:before {
+                    .bottom-line();
+                }
+
+                .name {
+                    font-size: .24rem;
+                    color: #666 * 1.1;
+                }
+
+                .fr {
+                    font-size: .24rem;
+                    color: #777;
+                }
+
+                &:nth-child(1) {
+
+                    .name {
+                        margin-left: .3rem;
+                    }
+
+                    .fr {
+                        margin-right: .18rem;
+                    }
+                }
+
+                &:nth-child(2) {
+
+                    &:after {
+                        .left-line();
+                    }
+
+                    .name {
+                        margin-left: .18rem;
+                    }
+
+                    .fr {
+                        margin-right: .3rem;
+                    }
+                }
+            }
+        }
+
+        .c-items {
+            padding-top: .2rem;
+            background-color: #f5f5f5;
+
+            .item {
+                padding: .3rem .28rem;
+                margin-bottom: .2rem;
+                background-color: #fff;
+
+                .date {
+                    height: .48rem;
+                    line-height: .5rem;
+
+                    span {
+                        font-size: .28rem;
+                        color: #999;
+
+                        &.iconfont {
+                            margin-right: .1rem;
+                            font-size: .3rem;
+                        }
+                    }
+                }
+
+                .item-hd {
+                    height: .84rem;
+                    line-height: .84rem;
+
+                    span {
+                        font-size: .3rem;
+
+                        &:last-child {
+                            color: #777;
+                        }
+                    }
+                }
+
+                .item-bd {
+                    padding: .2rem 0;
+                    
+                    &.content {
+                        position: relative;
+
+                        &:before {
+                            .top-line();
+                        }
+
+                        &:after {
+                            .bottom-line();
+                        }
+                    }
+
+                    h3 {
+                        height: .3rem;
+                        line-height: .3rem;
+                        font-size: .3rem;
+                    }
+
+                    p {
+                        margin-top: .1rem;
+                        line-height: .5rem;
+                        text-indent: 24px;
+                        font-size: .26rem;
+                        letter-spacing: 1px;
+                        color: #777;
+                    }
+
+                    img {
+                        margin-top: .2rem;
+                        width: 2rem;
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

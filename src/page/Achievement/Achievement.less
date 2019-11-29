@@ -1,0 +1,67 @@
+@import '../../assets/less/mixin.less';
+
+#Achievement {
+
+    .header {
+        background: linear-gradient(#744bff, #6a59f9);
+    }
+    
+    .overview {
+        text-align: center;
+        color: #fff;
+        background: linear-gradient(#6a59f9, #8278fa);
+
+        span {
+            line-height: .48rem;
+        }
+
+        h3 {
+            padding-bottom: .4rem;
+            line-height: .8rem;
+            font-size: .32rem;
+        }
+
+        p {
+            padding-bottom: .5rem;
+            line-height: .4rem;
+            font-size: .24rem;
+        }
+    }
+    
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .van-cell {
+            margin-top: .2rem;
+            padding-left: .4rem;
+            padding-right: .4rem;
+
+            .title {
+                display: flex;
+                align-items: center;
+            }
+
+            .fr {
+                margin-top: .08rem;
+                width: .28rem;
+                height: .28rem;
+                line-height: .28rem;
+                text-align: center;
+                font-size: .2rem;
+                color: #fff;
+                background-color: #ee3e53;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+    .van-button {
+        display: block;
+        margin: .4rem auto;
+        width: 2.6rem;
+        color: #fff;
+        background-color: #8262ff;
+        border-color: #8262ff;
+    }
+}

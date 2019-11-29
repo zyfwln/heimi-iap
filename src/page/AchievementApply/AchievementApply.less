@@ -1,0 +1,42 @@
+@import '../../assets/less/cell.less';
+
+#AchievementApply {
+
+    .header {
+        background-color: #744bff;
+    }
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .li {
+            .cell();
+            padding-right: .2rem;
+            padding-left: .3rem;
+
+            .left {
+                flex: 1;
+                display: flex;
+
+                .iconfont {
+                    margin-right: .2rem;
+                    font-size: 16px;
+
+                    &.icon-radio-yes {
+                        color: #744bff;
+                    }
+                }
+                
+                .mobile {
+                    color: #999;
+                }
+            }
+
+            .right {
+                margin-right: .2rem;
+                color: #666;
+            }
+        }
+    }
+}

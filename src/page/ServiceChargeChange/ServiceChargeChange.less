@@ -1,0 +1,250 @@
+@import '../../assets/less/btn.less';
+
+#ServiceChargeChange {
+
+    .header {
+        background-color: #b46704;
+    }
+    
+    .page {
+        flex: 1;
+        background-color: #fff;
+        overflow-y: scroll;
+
+        .items {
+
+            .item {
+                padding-bottom: .28rem;
+                
+                .item-head {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 .3rem;
+                    height: .64rem;
+                    line-height: .64rem;
+                    color: #999;
+                    background-color: #eee;
+
+                    .iconfont {
+                        margin-right: .1rem;
+                        font-size: .32rem;
+                    }
+                }
+
+                .item-bd {
+                    padding: 0 .3rem;
+
+                    .color-ff3535 {
+                        color: #ff3535;
+                    }
+                    
+                    .color-27aa39 {
+                        color: #27aa39;
+                    }
+
+                    .color-734aff {
+                        color: #734aff;
+                    }
+
+                    .bd-t {
+                        height: 1rem;
+                        line-height: 1rem;
+                    }
+
+                    .bd-c {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-left: .4rem;
+                        height: .84rem;
+                        line-height: .84rem;
+                        color: #666;
+                    }
+
+                    .bd-f {
+                        display: flex;
+                        height: .8rem;
+                        line-height: .8rem;
+                        
+                        span {
+                            font-size: .26rem;
+                        }
+
+                        .f-l {
+                            flex: 4;
+
+                            span:nth-child(2) {
+                                margin-left: .2rem;
+                            }
+                        }
+
+                        .f-r {
+                            flex: 5;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .26rem;
+
+                            .z-progress {
+                                margin-top: .3rem;
+                                width: 1rem;
+                            }
+                        }
+                    }
+
+                    .bd-btns {
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: .2rem 0;
+
+                        .btn {
+                            width: 1.3rem;
+                            height: .56rem;
+                            line-height: .56rem;
+                            .button(@radius: 0, @font-size: .26rem);
+
+                            &:first-child {
+                                background-color: #d18522;
+                            }
+
+                            &:last-child {
+                                margin-left: .2rem;
+                                background-color: #adadad;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .trans-pop-enter, .trans-pop-leave-active {
+        
+        .pop-overlay {
+            opacity: 0;
+        }
+
+        .pop-content {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+    }
+    
+    .v-pop-group {
+        .layer();
+        transition: all .3s;
+        
+        .pop-overlay {
+            .layer(@position: absolute, @alpha: .7, @z-index: 0);
+            transition: all .3s;
+        }
+    
+        .pop-content {
+            .layer(@position: absolute);
+            display: flex;
+            flex-direction: column;
+            top: auto;
+            max-height: 65%;
+            background: #fff;
+            transition: all .3s;
+            
+            .pop-head {
+                padding: 0 .6rem;
+
+                h3 {
+                    position: relative;
+                    padding-top: .55rem;
+                    text-align: center;
+                    
+                    &.title, .title {
+                        font-size: .32rem;
+                        color: #000;
+                    }
+
+                    .confirm {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        color: #8575f9;
+                    }
+                }
+
+                p {
+                    padding: .2rem 0 .1rem;
+                    text-align: center;
+                    color: #999;
+                }
+            }
+
+            ul {
+                flex: 1;
+                overflow-y: scroll;
+
+                .van-cell {
+                    padding: 0 .6rem;
+                    height: .9rem;
+                    line-height: .9rem;
+                    .tap-color();
+
+                    .iconfont {
+                        font-size: .3rem;
+                        
+                        &.icon-radio-yes {
+                            color: #8575f9;
+                        }
+                    }
+
+                    span {
+                        margin-left: .2rem;
+                    }
+
+                    .value {
+                        color: #777;
+                    }
+                }
+            }
+
+            .ul {
+                padding-top: .2rem;
+
+                .value {
+                    color: #777;
+                }
+
+                .input-box {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .input {
+                        display: flex;
+                        padding: 0 .15rem;
+                        width: 1rem;
+                        background-color: #eee;
+                        border: 1px solid #ccc;
+
+                        div {
+                            
+                            &:first-child {
+                                flex: 1;
+                                margin-right: .1rem;
+                                
+                                input {
+                                    display: block;
+                                    width: 100%;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .van-button {
+            display: block;
+            margin: .5rem auto;
+            width: 2.6rem;
+            color: #fff;
+            background-color: #d18522;
+            border-color: #d18522;
+        }
+    }
+}

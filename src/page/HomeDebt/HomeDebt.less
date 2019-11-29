@@ -1,0 +1,93 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+
+#HomeDebt {
+    position: relative;
+
+    .chart {
+        padding-top: .4rem;
+    }
+
+    .li {
+        display: flex;
+        padding: 0 .3rem;
+
+        .left {
+            flex: 1.2;
+        }
+
+        .center, .right {
+            flex: 1;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+    }
+
+    .hd-date {
+        margin-top: .98rem;
+        color: #999;
+        font-size: .22rem;
+
+        .iconfont {
+            margin-right: .12rem;
+            font-size: .28rem;
+        }
+
+        .li {
+            height: .7rem;
+            line-height: .7rem;
+        }
+    }
+    
+    .wrap {
+        flex: 1;
+        overflow-y: scroll;
+        
+        .van-collapse {
+            
+            &:after {
+                border: 0px;
+            }
+        }
+        
+        .list {
+
+            .li {
+                height: 1rem;
+                line-height: 1rem;
+                color: #666;
+
+                // &:before {
+                //     .arrow-head(@right: .3rem);
+                // }
+
+                // &:active {
+                //     background-color: @active-color;
+                // }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .iconfont {
+                        width: .36rem;
+                        height: .36rem;
+                        line-height: .36rem;
+                        text-align: center;
+                        font-size: .26rem;
+                        color: #fff;
+                        background-color: #cf8629;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

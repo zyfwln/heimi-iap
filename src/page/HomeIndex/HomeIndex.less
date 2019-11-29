@@ -1,0 +1,120 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+
+#HomeIndex {
+
+    .date-range {
+        height: .64rem;
+        line-height: .64rem;
+        text-align: center;
+        font-size: .26rem;
+        color: #fff !important;
+    }
+    
+    #HomeTab {
+        display: flex;
+            
+        .dl {
+            flex: 1;
+            padding-top: .38rem;
+            text-align: center;
+            color: #fff;
+            
+            &:not(:first-child) {
+                
+                .dt, .dd {
+                    border-left: 1px solid #d7d7d7;
+                }
+            }
+
+            .dt {
+                height: .32rem;
+                line-height: .32rem;
+                font-size: .32rem;
+
+                span {
+                    font-size: .32rem;
+                }
+            }
+
+            .dd {
+                padding-top: .16rem;
+                height: .24rem;
+                line-height: .24rem;
+                font-size: .24rem;
+            }
+        }
+    }
+
+    .hd-date {
+        display: flex;
+        justify-content: space-between;
+        margin-top: .7rem;
+        padding: 0 .44rem;
+        height: .7rem;
+        line-height: .7rem;
+        color: #999;
+
+        .iconfont {
+            margin-right: .12rem;
+            font-size: .28rem;
+        }
+
+        .left {
+            width: 1.7rem;
+
+            span {
+                font-size: .28rem;
+            }
+        }
+
+        .center, .right {
+            flex: 1;
+            text-align: right;
+        }
+
+        span {
+            font-size: .22rem;
+        }
+    }
+
+    .list {
+        flex: 1;
+        overflow-y: scroll;
+
+        .li {
+            display: flex;
+            align-items: center;
+            height: 1.18rem;
+            line-height: 1.18rem;
+            
+            >.iconfont {
+                margin-left: .44rem;
+                font-size: .4rem;
+                color: #6fb1f9;
+            }
+
+            .left {
+                margin-left: .18rem;
+                font-size: .28rem;
+            }
+
+            .center {
+                flex: 1;
+                text-align: right;
+                color: #777;
+            }
+
+            .right {
+                flex: 1;
+                margin-right: .44rem;
+                text-align: right;
+                color: #777;
+                
+                &.red {
+                    color: #ff7a7a;
+                }
+            }
+        }
+    }
+}

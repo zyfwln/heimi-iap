@@ -1,0 +1,161 @@
+.background(@image: '../../assets/image/home_bg_01.png') {
+    background-image: url(@image);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100% 6.12rem;
+}
+
+#Home {
+    position: relative;
+    background-color: #fff;
+    transition: all .4s;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 6.12rem;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 6.12rem;
+        right: 0;
+        width: 100%;
+        height: 1rem;
+        transform: translateY(-90%);
+    }
+
+    &.bg-01 {
+        // .background(@image: '../../assets/image/home_bg_01.png');
+
+        &:before {
+            background: linear-gradient(#0f8008, #0bb51b);
+        }
+
+        &:after {
+            background: url(../../assets/image/home_ud_01.png) bottom center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+
+    &.bg-02 {
+        // .background(@image: '../../assets/image/home_bg_02.png');
+
+        &:before {
+            background: linear-gradient(#535253, #b3b2b2);
+        }
+
+        &:after {
+            background: url(../../assets/image/home_ud_02.png) bottom center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+
+    &.bg-03 {
+
+        &:before {
+            background: linear-gradient(#01a7b2, #29bfce);
+        }
+
+        &:after {
+            background: url(../../assets/image/home_ud_06.png) bottom center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+
+    &.bg-04 {
+        // .background(@image: '../../assets/image/home_bg_03.png');
+        
+        &:before {
+            background: linear-gradient(#408dff, #6ab5ff);
+        }
+
+        &:after {
+            background: url(../../assets/image/home_ud_03.png) bottom center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+
+    &.bg-00 {
+        
+        &:before {
+            background: linear-gradient(#b26601, #cf8629);
+        }
+
+        &:after {
+            background: url(../../assets/image/home_ud_05.png) bottom center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+
+    &.bg-05 {
+        // .background(@image: '../../assets/image/home_bg_04.png');
+
+        &:before {
+            background: linear-gradient(#6e42ff, #a296ff);
+        }
+
+        &:after {
+            background: url(../../assets/image/home_ud_04.png) bottom center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+
+    &.bg-06 {
+        // .background(@image: '../../assets/image/home_bg_05.png');
+
+        &:before {
+            background: linear-gradient(#b26601, #cf8629);
+        }
+
+        &:after {
+            background: url(../../assets/image/home_ud_05.png) bottom center no-repeat;
+            background-size: 100% auto;
+        }
+    }
+
+    .pages {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        >div {
+            flex: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            transition: all .4s;
+        }
+        
+        .router-trans-left-enter {
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+        }
+
+        .router-trans-left-leave-active {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0);
+        }
+
+        .router-trans-right-enter {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0);
+        }
+        
+        .router-trans-right-leave-active {
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+        }
+    }
+}

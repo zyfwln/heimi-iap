@@ -1,0 +1,28 @@
+@import '../../assets/less/cell.less';
+
+#CustomerSearch {
+    
+    .ul {
+        flex: 1;
+        overflow-y: scroll;
+
+        .li {
+            .cell();
+
+            >div {
+                flex: 1;
+
+                &.left {
+
+                    .iconfont {
+                        margin-right: 5px;
+                    }
+                }
+
+                .icon-right {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

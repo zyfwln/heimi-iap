@@ -1,0 +1,31 @@
+@import '../../assets/less/cell.less';
+
+#CustomerProposal {
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .cells {
+
+            .cell {
+                .cell();
+                color: #666;
+
+                &:before {
+                    .arrow-head();
+                    right: .3rem;
+                }
+
+                .date {
+                    width: 1.8rem;
+                    font-size: .28rem;
+                }
+
+                .content {
+                    max-width: 68%;
+                }
+            }
+        }
+    }
+}

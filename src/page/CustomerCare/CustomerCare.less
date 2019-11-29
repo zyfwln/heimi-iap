@@ -1,0 +1,68 @@
+@import '../../assets/less/btn.less';
+
+#CustomerCare {
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .care-tips {
+            padding: 0 .3rem;
+            height: .6rem;
+            line-height: .6rem;
+            font-size: .24rem;
+            color: #555;
+        }
+
+        .care-list {
+
+            .list-li {
+                display: flex;
+                padding: .3rem;
+                background-color: #fff;
+            
+                .li-img {
+                    width: .9rem;
+                    height: .9rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .li-wrap {
+                    flex: 1;
+                    margin-left: .28rem;
+                    
+                    h3 {
+                        height: .46rem;
+                        line-height: .46rem;
+                    }
+
+                    .wrap-bd {
+                        height: .5rem;
+                        line-height: .5rem;
+                        
+                        .date {
+                            font-size: .24rem;
+                        }
+
+                        .type {
+                            margin-left: .4rem;
+                            font-size: .24rem;
+                            color: #ff4e4e;
+                        }
+
+                        .btn {
+                            width: 1.4rem;
+                            line-height: .5rem;
+                            .button(@radius: 0, @font-size: .24rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

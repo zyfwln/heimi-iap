@@ -1,0 +1,29 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/btn.less';
+
+#ReserveAdd {
+
+    .page {
+        flex: 1;
+        overflow-y: scroll;
+
+        .van-cell {
+            margin-top: .15rem;
+            
+            .placeholder {
+                color: #999;
+            }
+        }
+
+        .z-radio-group {
+            margin-left: 20px;
+        }
+    }
+    
+    .button {
+        height: .9rem;
+        line-height: .9rem;
+        .button(@font-size: .34rem, @radius: 0);
+    }
+}

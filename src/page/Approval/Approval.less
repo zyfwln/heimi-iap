@@ -1,0 +1,67 @@
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/btn.less';
+
+#Approval {
+
+    .header {
+
+        .left {
+            color: #fff;
+        }
+    }
+
+    .page {
+        flex: 1;
+        background-color: #fff;
+        overflow-y: scroll;
+
+        .approval-menus {
+
+            .munes-div {
+                position: relative;
+
+                &:not(:last-child) {
+
+                    &:after {
+                        .bottom-line();
+                    }
+                }
+
+                h3 {
+                    padding: .35rem .26rem;
+                    height: .36rem;
+                    line-height: .36rem;
+                    font-size: .32rem;
+                }
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    dl {
+                        padding-bottom: .2rem;
+                        width: 25%;
+                        text-align: center;
+
+                        dt {
+
+                            .iconfont {
+                                display: inline-block;
+                                width: 1rem;
+                                height: 1rem;
+                                line-height: 1rem;
+                                .button(@radius: 4px, @font-size: .58rem);
+                            }
+                        }
+
+                        dd {
+                            height: .74rem;
+                            line-height: .74rem;
+                            font-size: .28rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import '../../assets/less/mixin.less';
+@import '../../assets/less/cell.less';
+
+#ReturnAdd {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 999;
+    background: #f5f5f5;
+    transition: all .3s;
+
+    .header {
+        display: flex;
+        padding: .26rem .28rem;
+        line-height: .36rem;
+        background-color: #0aa916;
+
+        .cancel, .add {
+            min-width: .6rem;
+            color: #fff;
+        }
+
+        .title {
+            flex: 1;
+            font-size: .34rem;
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    .condition {
+        display: flex;
+        margin: .2rem 0;
+
+        li {
+            flex: 1;
+            height: .4rem;
+            line-height: .4rem;
+            text-align: center;
+            font-size: .24rem;
+            color: #666;
+
+            &:not(:first-child) {
+                position: relative;
+
+                &:after {
+                    .left-line();
+                    border-left: 1px dotted #999;
+                }
+            }
+
+            &.on {
+                color: #000;
+            }
+        }
+    }
+
+    .result {
+        flex: 1;
+        margin-top: .15rem;
+        overflow-y: scroll;
+
+        li {
+            .cell();
+
+            .left {
+                flex: 1;
+
+                .iconfont {
+                    margin-right: 5px;
+                }
+            }
+
+            .icon-right {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.pop-right-enter, .pop-right-leave-to {
+    transform: translate3d(100%, 0, 0);
+}

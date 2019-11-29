@@ -1,0 +1,23 @@
+.app-main {
+    flex: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    background: #f5f5f5;
+}
+
+.container {
+    transition: all .5s;
+}
+
+.z-router-trans-enter, .z-router-trans-enter-active {
+    
+    .container {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+        z-index: 999;
+    }
+}

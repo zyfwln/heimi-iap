@@ -1,0 +1,44 @@
+@import '../../assets/less/global.less';
+@import '../../assets/less/btn.less';
+@import '../../assets/less/cell.less';
+
+#WorkSummary {
+
+    .pages {
+        position: relative;
+        flex: 1;
+
+        .cell {
+            .cell();
+
+            .left {
+                flex: 1;
+                display: flex;
+
+                .iconfont {
+                    margin-right: .15rem;
+                    font-size: .34rem;
+                    color: #ccc;
+
+                    &.icon-radio-yes {
+                        color: @default-color;
+                    }
+                }
+            }
+
+            .center {
+                width: 45%;
+                color: #666;
+            }
+
+            .right {
+                flex: 1;
+                text-align: right;
+            }
+
+            .color-62acff {
+                color: #62acff;
+            }
+        }
+    }
+}

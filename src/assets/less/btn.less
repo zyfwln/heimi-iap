@@ -1,0 +1,15 @@
+@import 'global.less';
+@import 'mixin.less';
+
+.button(@font-size: .32rem, @color: #fff, @background-color: @default-color, @radius: 4px) {
+    text-align: center;
+    font-size: @font-size;
+    color: @color;
+    background-color: @background-color;
+    border-radius: @radius;
+
+    &:active {
+        position: relative;
+        .tap-color();
+    }
+}

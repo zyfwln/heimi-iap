@@ -1,0 +1,123 @@
+@import '../../assets/less/btn.less';
+@import '../../assets/less/cell.less';
+
+#HomeGuest {
+
+    .date-range {
+        height: .64rem;
+        line-height: .64rem;
+        text-align: center;
+        font-size: .26rem;
+        color: #fff;
+        font-family: 'PingFang SC,Helvetica Neue,Arial,sans-serif';
+    }
+
+    .hd-date {
+        display: flex;
+        margin-top: .7rem;
+        padding: 0 .44rem;
+        height: .7rem;
+        line-height: .7rem;
+        color: #999;
+        font-size: .22rem;
+
+        .iconfont {
+            margin-right: .12rem;
+            font-size: .28rem;
+        }
+
+        >div {
+            flex: 1;
+
+            &.center {
+                text-align: center;
+            }
+
+            &.right {
+                text-align: right;
+            }
+        }
+    }
+
+    .wrap {
+        flex: 1;
+        overflow-y: scroll;
+    
+        .list {
+
+            .li {
+                display: flex;
+                padding: 0 .2rem;
+                height: 1rem;
+                line-height: 1rem;
+
+                .cell {
+                    
+                    &:first-child {
+                        flex: 1.1;
+
+                        .iconfont {
+                            margin-right: .1rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        flex: 1.3;
+                        text-align: center;
+                        color: #666;
+                    }
+
+                    &:nth-child(3) {
+                        flex: 1;
+                        text-align: right;
+
+                        .iconfont {
+                            margin-left: .2rem;
+                            font-size: 16px;
+                            color: #666;
+                        }
+                    }
+
+                    &.revoke {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        div {
+                            height: .3rem;
+                            line-height: .3rem;
+                            font-size: .24rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .wrap-bottom {
+            
+            p {
+                height: .8rem;
+                line-height: .8rem;
+                text-align: center;
+                font-size: .24rem;
+                color: #ccc;
+            }
+        }
+    }
+
+    .btn-add {
+        position: fixed;
+        right: .3rem;
+        top: 6.27rem;
+        // margin: .5rem auto .6rem;
+        width: 1.5rem;
+        height: .46rem;
+        line-height: .46rem;
+        text-align: center;
+        font-size: .2rem;
+        color: #fff;
+        background-color: #919191;
+        border-radius: 2px;
+        // .button(@font-size: .28rem, @background-color: #919191, @radius: 2px);
+    }
+}

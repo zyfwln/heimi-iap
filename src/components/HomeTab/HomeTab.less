@@ -1,0 +1,49 @@
+@import '../../assets/less/mixin.less';
+
+#HomeTab {
+    display: flex;
+        
+    .dl {
+        flex: 1;
+        padding-top: .38rem;
+        text-align: center;
+        color: #fff;
+        
+        &.on {
+            position: relative;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                top: .15rem;
+                left: 50%;
+                transform: translateX(-50%);
+                .arrow(@bottom: transparent, @top: #fff);
+            }
+        }
+
+        &:not(:first-child) {
+            
+            .dt, .dd {
+                border-left: 1px solid #d7d7d7;
+            }
+        }
+
+        .dt {
+            height: .32rem;
+            line-height: .32rem;
+            font-size: .34rem;
+
+            span {
+                font-size: .32rem;
+            }
+        }
+
+        .dd {
+            padding-top: .16rem;
+            height: .24rem;
+            line-height: .24rem;
+            font-size: .24rem;
+        }
+    }
+}
